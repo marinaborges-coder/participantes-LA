@@ -158,6 +158,70 @@
             height: 24px;
         }
         
+        /* Confirmation CTA Section */
+        .confirmation-cta {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .confirmation-cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .confirmation-cta h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            position: relative;
+        }
+        
+        .confirmation-cta p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .confirmation-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--white);
+            color: var(--accent-dark);
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .confirmation-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+        
+        .confirmation-btn svg {
+            width: 24px;
+            height: 24px;
+        }
+        
         /* Main Content */
         .container {
             max-width: 1100px;
@@ -855,21 +919,27 @@
                 </div>
                 <div class="location-item">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-                    <span><strong>Uber/99:</strong> Desembarque pela R. Bento Branco de Andrade Filho, 286</span>
+                    <span><strong>Uber/99:</strong> Av. das Nações Unidas, 17955 – Vila Almeida, São Paulo</span>
                 </div>
                 <div class="location-item">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
                     <span><strong>Aeroporto indicado:</strong> Congonhas (CGH) – 12km</span>
-                </div>
-                <div class="location-item">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path></svg>
-                    <span><strong>Wi-Fi:</strong> Gratuito no local do evento</span>
                 </div>
             </div>
             
             <a href="https://maps.google.com/?q=Av.+das+Nações+Unidas,+17955+-+Vila+Almeida,+São+Paulo" target="_blank" class="map-btn">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
                 Ver no Google Maps
+            </a>
+        </section>
+
+        <!-- Confirmation CTA -->
+        <section class="confirmation-cta">
+            <h3>🎫 Confirme sua Presença!</h3>
+            <p>Para garantir sua entrada no evento, preencha o formulário de confirmação abaixo</p>
+            <a href="https://forms.gle/mzN3o9C4URX3faCn7" target="_blank" class="confirmation-btn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Confirmar Presença
             </a>
         </section>
 
